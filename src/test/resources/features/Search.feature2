@@ -1,0 +1,11 @@
+Feature: Funcionalidad de búsqueda de productos
+  Scenario: Búsqueda sin resultados
+    Given Se carga la página de búsqueda
+    When Buscamos el término "microsoft"
+    Then Se muestra el mensaje "No results were found for your search"
+
+
+  Scenario: Verificar que se muestre 1 producto en el carro de compras
+    Given Se carga la página de búsqueda
+    When Se añade al carrito un producto con la búsqueda de "skirt"
+    Then se muestra el carro de compras "1" "Product"
