@@ -13,6 +13,7 @@ import pageobjects.AddToCartPage;
 import pageobjects.ProductPage;
 import pageobjects.SearchPage;
 
+/* This is a search class */
 public class Search {
 
     WebDriver driver;
